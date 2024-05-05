@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall$/;"	m
+GAME_H_	Game.h	6;"	d
+Game_Loop	Game.c	/^int Game_Loop(void)$/;"	f
+ROUND_H_	Round.h	6;"	d
+RoundDetails	Round.c	/^} RoundDetails;$/;"	t	typeref:struct:__anon1	file:
+Round_GetRangeHigh	Round.c	/^unsigned int Round_GetRangeHigh(void){ return m_currentRound.rangeHigh; }$/;"	f
+Round_GetRangeLow	Round.c	/^unsigned int Round_GetRangeLow(void){ return m_currentRound.rangeLow; }$/;"	f
+Round_IsExpectedNumberHot	Round.c	/^int Round_IsExpectedNumberHot(unsigned int guessedNumber)$/;"	f
+Round_SetExpectedRandomNumber	Round.c	/^void Round_SetExpectedRandomNumber(unsigned int expectedRandomNumber)$/;"	f
+Round_SetRange	Round.c	/^int Round_SetRange(unsigned int low, unsigned int high)$/;"	f
+USER_H_	User.h	6;"	d
+User_EstablishRoundDetails	User.c	/^void User_EstablishRoundDetails(void)$/;"	f
+User_Init	User.c	/^void User_Init(void)$/;"	f
+expectedRandomNumber	Round.c	/^    unsigned int expectedRandomNumber;$/;"	m	struct:__anon1	file:
+hotColdPercent	Round.c	/^    double hotColdPercent;$/;"	m	struct:__anon1	file:
+m_currentRound	Round.c	/^static RoundDetails m_currentRound;$/;"	v	file:
+main	main.c	/^int main(void)$/;"	f
+objects	Makefile	/^objects := $(patsubst %.c,%.o,$(wildcard *.c))$/;"	m
+printBanner	Game.c	/^static void printBanner(void)$/;"	f	file:
+rangeHigh	Round.c	/^    unsigned int rangeHigh;$/;"	m	struct:__anon1	file:
+rangeLow	Round.c	/^    unsigned int rangeLow;$/;"	m	struct:__anon1	file:

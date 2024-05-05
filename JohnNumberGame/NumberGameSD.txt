@@ -1,0 +1,21 @@
+@startuml
+
+autoactivate on
+
+main -> Game : Loop()
+    Game -> User : GetDetails(out_round)
+        note right of User
+            Store user input range, calculate hot/cold
+        endnote
+        User -> Round : CalculateHotRange()
+        return
+    return
+
+    Game -> User : GetGuess()
+    return
+
+return
+
+
+
+@enduml
